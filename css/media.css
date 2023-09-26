@@ -1,15 +1,12 @@
 @media (max-width: 1279px) {
-  .swiper {
-    max-width: 855px;
-    margin-left: 0;
-  }
 
-  #swiperPrev {
+
+  .swiperPrev {
     left: -64px;
   }
 
-  #swiperNext {
-    left: 847px;
+  .swiperNext {
+    left: 1115px;
   }
 }
 
@@ -24,11 +21,26 @@
     top: 17px;
     right: -292px;
   }
+
+  .swiper {
+    max-width: 1390px;
+    margin-right: 268px;
+    margin-bottom: 29px;
+  }
+
+  .swiperNext {
+    left: 836px;
+  }
 }
 
 @media (max-width: 1126px) {
   .item__card:nth-child(3n) {
     margin-right: 30px;
+  }
+
+  .playlist-intend {
+    max-width: 280px;
+    bottom: 99px;
   }
 
 }
@@ -362,6 +374,8 @@
   }
 
   .swiper {
+    max-width: 1180px;
+    margin-right: -31px;
     margin-bottom: 35px;
   }
 
@@ -374,10 +388,35 @@
   }
 }
 
+@media (max-width: 1023px) {
+  .header-right__item:not(:last-child) {
+    margin-right: 31px;
+  }
+
+  .broadcast-left {
+    margin-right: 5px;
+  }
+
+  .playlist-right__info,
+  .playlist-right__info:nth-child(4n) {
+    margin-right: 9px;
+  }
+
+  .playlist-right__info:nth-child(12n),
+  .playlist-right__info:nth-child(11n) {
+    .playlist-right__info:nth-child(10n) {
+      margin-bottom: 30px;
+    }
+  }
+}
 
 @media (max-width: 992px) {
   .header-right__list {
     display: none;
+  }
+
+  .playlist-right__info:nth-child(10n) {
+    margin-bottom: 30px;
   }
 
   .playlist-right__info:nth-child(3n) {
@@ -787,8 +826,8 @@
     right: 144px;
   }
 
-  #swiperNext {
-    left: 592px;
+  .swiperNext {
+    left: 567px;
   }
 
   .swiper__subtitle {
@@ -872,11 +911,11 @@
 
 
 @media (max-width: 720px) {
-  #swiperNext {
+  .swiperNext {
     display: none;
   }
 
-  #swiperPrev {
+  .swiperPrev {
     display: none;
   }
 }
@@ -2063,7 +2102,7 @@
   }
 
   .swiper {
-    max-width: 268px;
+    max-width: 300px;
   }
 
   .product {
@@ -2437,4 +2476,11 @@
     top: 215px;
     flex-direction: column;
   }
+}
+
+@media (max-width: 315px) {
+  .broadcasts__archive {
+    display: none;
+  }
+}
 }
