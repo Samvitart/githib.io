@@ -16,6 +16,7 @@
   --color-smoky-white: #F5F6F7;
 }
 
+
 @font-face {
   font-family: 'Muller';
   src: local('Muller-Regular-Italic'), url(../fonts/MullerRegularItalic.woff2) format("woff2");
@@ -3087,14 +3088,14 @@ body {
 
 .swiper-wrapper {
   transition-duration: 0ms;
-  transform: translate3d(-1140px, 0px, 0px);
-  -webkit-transform: translate3d(-1140px, 0px, 0px);
-  -moz-transform: translate3d(-1140px, 0px, 0px);
-  -ms-transform: translate3d(-1140px, 0px, 0px);
-  -o-transform: translate3d(-1140px, 0px, 0px);
+  transform: translate3d(-1139px, 0px, 0px);
+  -webkit-transform: translate3d(-1139px, 0px, 0px);
+  -moz-transform: translate3d(-1139px, 0px, 0px);
+  -ms-transform: translate3d(-1139px, 0px, 0px);
+  -o-transform: translate3d(-1139px, 0px, 0px);
 }
 
-#swiperPrev {
+.swiperPrev {
   position: absolute;
   top: 106px;
   left: -74px;
@@ -3109,7 +3110,7 @@ body {
   -o-border-radius: 50%;
 }
 
-#swiperPrev::after {
+.swiperPrev::after {
   position: absolute;
   content: '';
   font-size: 0;
@@ -3128,7 +3129,7 @@ body {
   -o-transition: transform 0.1s ease-in-out;
 }
 
-#swiperNext {
+.swiperNext {
   position: absolute;
   top: 106px;
   left: 1144px;
@@ -3141,9 +3142,10 @@ body {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  z-index: 1000;
 }
 
-#swiperNext::after {
+.swiperNext::after {
   position: absolute;
   content: '';
   font-size: 0;
