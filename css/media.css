@@ -1024,6 +1024,7 @@
     padding-left: 36px;
     padding-top: 30px;
     padding-bottom: 30px;
+    gap: 70px;
   }
 
   .burger-nav__link {
@@ -1089,7 +1090,7 @@
     display: none;
     max-width: 235px;
     padding-bottom: 20px;
-}
+  }
 
   .bottom-right--active {
     display: flex;
@@ -1099,7 +1100,7 @@
     top: 83px;
     left: 31px;
     background-color: var(--color-white);
-}
+  }
 
   .broadcast-left__play {
     position: absolute;
