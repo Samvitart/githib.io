@@ -113,7 +113,6 @@ body {
 
 .container {
   max-width: 1110px;
-  width: 100%;
   margin: 0 auto;
 }
 
@@ -122,15 +121,13 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
   padding-top: 21px;
   padding-bottom: 19px;
 }
 
 .header-top__logo {
-  margin-right: 29px;
+  margin-right: 68px;
   width: 160px;
-  padding-top: 5px;
 }
 
 .burger-active {
@@ -191,26 +188,21 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  max-width: 882px;
-  width: 100%;
 }
 
 .header-right__list {
   display: flex;
   flex-direction: row;
   align-items: center;
-  max-width: 660px;
-  width: 100%;
+  flex: 1 1 auto;
+  gap: 38px;
+  justify-content: center;
   margin: 0;
   padding: 0;
 }
 
-.header-right__item:not(:last-child) {
-  margin-right: 39px;
-}
 
-#burger {
+.header__right-burger {
   display: none;
 }
 
@@ -219,7 +211,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-left: 2px;
+  padding-left: 53px;
 }
 
 .button__input {
@@ -631,10 +623,6 @@ body {
   justify-content: space-between;
 }
 
-.bottom-left__list:not(:last-child) {
-  margin-right: 20px;
-}
-
 
 .burger-nav {
   display: none;
@@ -654,6 +642,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 30px;
 }
 
 .bottom-left__link {
@@ -944,8 +933,7 @@ body {
 
 .radio {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  gap: 131px;
 }
 
 .radio-left {
@@ -954,7 +942,6 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 94px;
-  margin-right: 155px;
 }
 
 .radio-left__title {
@@ -1028,6 +1015,11 @@ body {
 
 .radio-right {
   padding-top: 30px;
+  transition: padding 0.3s ease-in-out;
+  -webkit-transition: padding 0.3s ease-in-out;
+  -moz-transition: padding 0.3s ease-in-out;
+  -ms-transition: padding 0.3s ease-in-out;
+  -o-transition: padding 0.3s ease-in-out;
 }
 
 .hero {
@@ -1061,12 +1053,9 @@ body {
   position: relative;
   display: flex;
   flex-direction: row;
-  max-width: 540px;
   max-height: 140px;
-  width: 100%;
   background-color: var(--color-white);
-  flex: 1 1 365px;
-  width: calc(539/1110*100%);
+  width: calc(50% - 15px);
 }
 
 
@@ -1081,16 +1070,9 @@ body {
 }
 
 
-
-.card-right {
-  max-width: 428px;
-  width: 100%;
-}
-
 .card-descr {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--color-lavender);
 }
@@ -1437,8 +1419,6 @@ body {
 .broadcasts__container {
   position: relative;
   display: flex;
-
-  width: 100%;
 }
 
 
@@ -1449,6 +1429,7 @@ body {
   flex-wrap: wrap;
   max-width: 855px;
   width: 100%;
+  gap: 30px;
   margin: 0;
   padding: 0;
 }
@@ -1478,8 +1459,6 @@ body {
   max-height: 258px;
   height: 100%;
   width: 100%;
-  margin-right: 30px;
-  margin-bottom: 30px;
   border: 1px solid var(--color-lavender);
   cursor: pointer;
   transition: border 0.3s ease-in-out;
@@ -1525,22 +1504,6 @@ body {
 
 .item__card:active picture::before {
   opacity: 0.4;
-}
-
-.item__card:nth-child(3n) {
-  margin-right: 0;
-}
-
-.item__card:nth-child(4n) {
-  margin-bottom: 0;
-}
-
-.item__card:nth-child(5n) {
-  margin-bottom: 0;
-}
-
-.item__card:nth-child(6n) {
-  margin-bottom: 0;
 }
 
 .item__descr {
@@ -2005,7 +1968,6 @@ body {
 .accordion {
   max-width: 730px;
   width: 100%;
-  margin-right: 30px;
 }
 
 .ac {
@@ -2275,6 +2237,7 @@ body {
 
 .guests__more {
   display: flex;
+  gap: 30px;
 
 }
 
@@ -2564,6 +2527,8 @@ body {
   padding-left: 23px;
   max-width: 350px;
   width: 100%;
+  border-bottom: 1px solid var(--color-light-grey);
+  padding-bottom: 27px;
 }
 
 .playlist {
@@ -2603,20 +2568,19 @@ body {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
+  gap: 30px;
   padding-top: 13px;
 }
 
 .playlist-right__info {
   position: relative;
-  max-width: 160px;
-  width: 100%;
-  margin-right: 30px;
-  margin-bottom: 30px;
+  width: 160px;
   border-left: 1px solid var(--color-lavender);
   border-right: 1px solid var(--color-lavender);
   border-bottom: 1px solid var(--color-lavender);
   border-top: 1px solid var(--color-lavender);
   cursor: pointer;
+
 }
 
 .playlist-right__info .playlist-right__image::before {
@@ -2780,27 +2744,6 @@ body {
   -ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out, border 0.2s ease-in-out, fill 0.2s ease-in-out, stroke 0.2s ease-in-out, outline 0.2s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-.playlist-right__info:nth-child(4n) {
-  margin-right: 0;
-}
-
-
-.playlist-right__info:nth-child(9n) {
-  margin-bottom: 0;
-}
-
-.playlist-right__info:nth-child(10n) {
-  margin-bottom: 0;
-}
-
-.playlist-right__info:nth-child(11n) {
-  margin-bottom: 0;
-}
-
-.playlist-right__info:nth-child(12n) {
-  margin-bottom: 0;
-}
-
 .playlist-right__image {
   position: relative;
   max-width: 159px;
@@ -2853,8 +2796,6 @@ body {
 
 .playlist-intend__descr {
   max-width: 346px;
-  border-top: 1px solid var(--color-light-grey);
-  padding-top: 39px;
   color: var(--color-gray);
   font-size: 16px;
   font-weight: 400;
@@ -2878,11 +2819,12 @@ body {
 .product-info {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 30px;
 }
 
 .product-info__left {
   position: relative;
+  flex: 1 1 598px;
 }
 
 .product-info__logo-svg {
@@ -2892,8 +2834,7 @@ body {
 }
 
 .product-info__right {
-  max-width: 445px;
-  width: 100%;
+  flex: 1 1 396px;
 }
 
 .product-info__title {
@@ -3063,33 +3004,16 @@ body {
 }
 
 .swiper {
-  max-width: 1180px;
-  margin-right: -31px;
   margin-bottom: 29px;
 }
 
 .swiper-slide {
-  max-width: 286.25px;
-  width: 100%;
-  background-repeat: no-repeat;
+  max-width: 280px;
+  margin-right: 7px;
 }
 
 .swiper-slide__speaker {
-  margin-bottom: 23px;
-}
-
-.swiper-slide-duplicate {
-  max-width: 286.25px;
-  width: 100%;
-}
-
-.swiper-wrapper {
-  transition-duration: 0ms;
-  transform: translate3d(-1139px, 0px, 0px);
-  -webkit-transform: translate3d(-1139px, 0px, 0px);
-  -moz-transform: translate3d(-1139px, 0px, 0px);
-  -ms-transform: translate3d(-1139px, 0px, 0px);
-  -o-transform: translate3d(-1139px, 0px, 0px);
+  margin-bottom: 20px;
 }
 
 .swiperPrev {
