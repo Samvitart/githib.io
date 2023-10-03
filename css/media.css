@@ -1311,7 +1311,6 @@
   }
 
   .card {
-    max-width: 257px;
     flex-direction: column;
     max-height: 185px;
   }
@@ -1338,6 +1337,7 @@
   .card__pictures {
     height: 100%;
     height: 72px;
+    width: 100%;
   }
 
   .podcast__title {
