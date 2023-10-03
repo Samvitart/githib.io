@@ -20,84 +20,86 @@
 
 <body>
   <header class="header">
-    <div class="header-top container">
-      <div class="header-top__logo">
-        <picture>
-          <source media="(max-width: 1024px)" srcset="img/header-logo1024.png">
-          <img class="img-reset header-top__logo" src="img/logoheader-logo.png" alt="Логотип W-wave">
-        </picture>
-      </div>
-      <nav class="header-right">
-        <ul class="header-right__list">
-          <li class="header-right__item list-reset">
-            <a href="#podcasts" class="header-right__link link-reset">
-              Подкасты
-            </a>
-          </li>
-          <li class="header-right__item list-reset">
-            <a href="#broadcast" class="header-right__link link-reset">
-              Передачи
-            </a>
-          </li>
-          <li class="header-right__item list-reset">
-            <a href="#guests" class="header-right__link link-reset">
-              Гости
-            </a>
-          </li>
-          <li class="header-right__item list-reset">
-            <a href="#playlists" class="header-right__link link-reset">
-              Плейлисты
-            </a>
-          </li>
-          <li class="header-right__item list-reset">
-            <a href="#aboutus" class="header-right__link link-reset">
-              О нас
-            </a>
-          </li>
-        </ul>
-        <button id="burger" class="header__right-burger burger btn-reset" aria-label="Открыть меню">
-          <span class="burger__line burger__line-first"></span>
-          <span class="burger__line burger__line-second"></span>
-          <span class="burger__line burger__line-third"></span>
-          <span class="burger__line burger__line-fourth"></span>
-        </button>
-        <div class="button">
-          <form action="https://jsonplaceholder.typicode.com/posts" id="mainForm" onsubmit="return false;">
-            <input class="button__input" type="text" placeholder="Поиск по сайту">
-            <button class="button__search search-active btn-reset" aria-label="Поиск по сайту">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
-                  stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M20.9999 21L16.6499 16.65" stroke="" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-            </button>
-          </form>
-          <button class="button__authorization  btn-reset" data-graph-path="first" aria-label="Войти">
-            Вход
-          </button>
+    <div class="container">
+      <div class="header-top ">
+        <div class="header-top__logo">
+          <picture>
+            <source media="(max-width: 1024px)" srcset="img/header-logo1024.png">
+            <img class="img-reset header-top__logo" src="img/logoheader-logo.png" alt="Логотип W-wave">
+          </picture>
         </div>
-      </nav>
-      <div class="burger-active">
-        <div class="burger-nav">
-          <a href="#podcasts" class="burger-nav__link link-reset">Подкасты</a>
-          <a href="#playlists" class="burger-nav__link link-reset">Плейлисты</a>
-          <a href="#broadcast" class="burger-nav__link link-reset">Передачи</a>
-          <a href="#aboutus" class="burger-nav__link link-reset">О нас</a>
-          <a href="#guests" class="burger-nav__link link-reset">Гости</a>
-          <svg class="burger-nav__left-svg" xmlns="http://www.w3.org/2000/svg" width="115" height="315"
-            viewBox="0 0 115 315" fill="none">
-            <path
-              d="M73.4159 1C33.4215 1 1 11.2609 1 23.9184C1 36.5758 33.4215 46.8368 73.4159 46.8368C95.8298 46.8368 114 42.4932 114 37.1351C114 31.777 95.8298 27.4335 73.4159 27.4335C33.4215 27.4335 1 37.6944 1 50.3518C1 63.0094 33.4215 73.2706 73.4159 73.2706C95.8298 73.2706 114 68.9268 114 63.5686C114 58.2105 95.8298 53.8669 73.4159 53.8669C33.4215 53.8669 1 64.1908 1 76.9259C1 89.6609 33.4215 99.9851 73.4159 99.9851C95.8298 99.9851 114 95.6414 114 90.2831C114 84.9249 95.8298 80.582 73.4159 80.582C33.4215 80.582 1 90.8425 1 103.5C1 116.158 33.4215 126.418 73.4159 126.418C95.8298 126.418 114 122.075 114 116.717C114 111.359 95.8298 107.015 73.4159 107.015C33.4215 107.015 1 117.276 1 129.934C1 142.591 33.4215 152.852 73.4159 152.852C95.8298 152.852 114 148.508 114 143.151C114 137.792 95.8298 133.449 73.4159 133.449C33.4215 133.449 1 143.71 1 156.367C1 169.024 33.4215 179.285 73.4159 179.285C95.8298 179.285 114 174.942 114 169.583C114 164.226 95.8298 159.882 73.4159 159.882C33.4215 159.882 1 170.206 1 182.941C1 195.676 33.4215 206 73.4159 206M73.4159 160C33.4215 160 1 170.261 1 182.918C1 195.576 33.4215 205.837 73.4159 205.837C95.8298 205.837 114 201.493 114 196.135C114 190.777 95.8298 186.433 73.4159 186.433C33.4215 186.433 1 196.694 1 209.352C1 222.009 33.4215 232.271 73.4159 232.271C95.8298 232.271 114 227.927 114 222.569C114 217.211 95.8298 212.867 73.4159 212.867C33.4215 212.867 1 223.191 1 235.926C1 248.661 33.4215 258.985 73.4159 258.985C95.8298 258.985 114 254.641 114 249.283C114 243.925 95.8298 239.582 73.4159 239.582C33.4215 239.582 1 249.842 1 262.5C1 275.158 33.4215 285.418 73.4159 285.418C95.8298 285.418 114 281.075 114 275.717C114 270.359 95.8298 266.015 73.4159 266.015C33.4215 266.015 1 276.276 1 288.934C1 301.591 33.4215 311.852 73.4159 311.852C95.8298 311.852 114 307.508 114 302.151C114 296.792 95.8298 292.449 73.4159 292.449C33.4215 292.449 1 302.71 1 315.367C1 328.024 33.4215 338.285 73.4159 338.285C95.8298 338.285 114 333.942 114 328.583C114 323.226 95.8298 318.882 73.4159 318.882C33.4215 318.882 1 329.206 1 341.941C1 354.676 33.4215 365 73.4159 365"
-              stroke="#A1A6B4" stroke-linecap="round" />
-          </svg>
-          <svg class="burger-nav__right-svg" xmlns="http://www.w3.org/2000/svg" width="115" height="315"
-            viewBox="0 0 115 315" fill="none">
-            <path
-              d="M73.4159 1C33.4215 1 1 11.2609 1 23.9184C1 36.5758 33.4215 46.8368 73.4159 46.8368C95.8298 46.8368 114 42.4932 114 37.1351C114 31.777 95.8298 27.4335 73.4159 27.4335C33.4215 27.4335 1 37.6944 1 50.3518C1 63.0094 33.4215 73.2706 73.4159 73.2706C95.8298 73.2706 114 68.9268 114 63.5686C114 58.2105 95.8298 53.8669 73.4159 53.8669C33.4215 53.8669 1 64.1908 1 76.9259C1 89.6609 33.4215 99.9851 73.4159 99.9851C95.8298 99.9851 114 95.6414 114 90.2831C114 84.9249 95.8298 80.582 73.4159 80.582C33.4215 80.582 1 90.8425 1 103.5C1 116.158 33.4215 126.418 73.4159 126.418C95.8298 126.418 114 122.075 114 116.717C114 111.359 95.8298 107.015 73.4159 107.015C33.4215 107.015 1 117.276 1 129.934C1 142.591 33.4215 152.852 73.4159 152.852C95.8298 152.852 114 148.508 114 143.151C114 137.792 95.8298 133.449 73.4159 133.449C33.4215 133.449 1 143.71 1 156.367C1 169.024 33.4215 179.285 73.4159 179.285C95.8298 179.285 114 174.942 114 169.583C114 164.226 95.8298 159.882 73.4159 159.882C33.4215 159.882 1 170.206 1 182.941C1 195.676 33.4215 206 73.4159 206M73.4159 160C33.4215 160 1 170.261 1 182.918C1 195.576 33.4215 205.837 73.4159 205.837C95.8298 205.837 114 201.493 114 196.135C114 190.777 95.8298 186.433 73.4159 186.433C33.4215 186.433 1 196.694 1 209.352C1 222.009 33.4215 232.271 73.4159 232.271C95.8298 232.271 114 227.927 114 222.569C114 217.211 95.8298 212.867 73.4159 212.867C33.4215 212.867 1 223.191 1 235.926C1 248.661 33.4215 258.985 73.4159 258.985C95.8298 258.985 114 254.641 114 249.283C114 243.925 95.8298 239.582 73.4159 239.582C33.4215 239.582 1 249.842 1 262.5C1 275.158 33.4215 285.418 73.4159 285.418C95.8298 285.418 114 281.075 114 275.717C114 270.359 95.8298 266.015 73.4159 266.015C33.4215 266.015 1 276.276 1 288.934C1 301.591 33.4215 311.852 73.4159 311.852C95.8298 311.852 114 307.508 114 302.151C114 296.792 95.8298 292.449 73.4159 292.449C33.4215 292.449 1 302.71 1 315.367C1 328.024 33.4215 338.285 73.4159 338.285C95.8298 338.285 114 333.942 114 328.583C114 323.226 95.8298 318.882 73.4159 318.882C33.4215 318.882 1 329.206 1 341.941C1 354.676 33.4215 365 73.4159 365"
-              stroke="#A1A6B4" stroke-linecap="round" />
-          </svg>
+        <nav class="header-right">
+          <ul class="header-right__list">
+            <li class="header-right__item list-reset">
+              <a href="#podcasts" class="header-right__link link-reset">
+                Подкасты
+              </a>
+            </li>
+            <li class="header-right__item list-reset">
+              <a href="#broadcast" class="header-right__link link-reset">
+                Передачи
+              </a>
+            </li>
+            <li class="header-right__item list-reset">
+              <a href="#guests" class="header-right__link link-reset">
+                Гости
+              </a>
+            </li>
+            <li class="header-right__item list-reset">
+              <a href="#playlists" class="header-right__link link-reset">
+                Плейлисты
+              </a>
+            </li>
+            <li class="header-right__item list-reset">
+              <a href="#aboutus" class="header-right__link link-reset">
+                О нас
+              </a>
+            </li>
+          </ul>
+          <button id="burger" class="header__right-burger burger btn-reset" aria-label="Открыть меню">
+            <span class="burger__line burger__line-first"></span>
+            <span class="burger__line burger__line-second"></span>
+            <span class="burger__line burger__line-third"></span>
+            <span class="burger__line burger__line-fourth"></span>
+          </button>
+          <div class="button">
+            <form action="https://jsonplaceholder.typicode.com/posts" id="mainForm" onsubmit="return false;">
+              <input class="button__input" type="text" placeholder="Поиск по сайту">
+              <button class="button__search search-active btn-reset" aria-label="Поиск по сайту">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                    stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M20.9999 21L16.6499 16.65" stroke="" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </form>
+            <button class="button__authorization  btn-reset" data-graph-path="first" aria-label="Войти">
+              Вход
+            </button>
+          </div>
+        </nav>
+        <div class="burger-active">
+          <div class="burger-nav">
+            <a href="#podcasts" class="burger-nav__link link-reset">Подкасты</a>
+            <a href="#playlists" class="burger-nav__link link-reset">Плейлисты</a>
+            <a href="#broadcast" class="burger-nav__link link-reset">Передачи</a>
+            <a href="#aboutus" class="burger-nav__link link-reset">О нас</a>
+            <a href="#guests" class="burger-nav__link link-reset">Гости</a>
+            <svg class="burger-nav__left-svg" xmlns="http://www.w3.org/2000/svg" width="115" height="315"
+              viewBox="0 0 115 315" fill="none">
+              <path
+                d="M73.4159 1C33.4215 1 1 11.2609 1 23.9184C1 36.5758 33.4215 46.8368 73.4159 46.8368C95.8298 46.8368 114 42.4932 114 37.1351C114 31.777 95.8298 27.4335 73.4159 27.4335C33.4215 27.4335 1 37.6944 1 50.3518C1 63.0094 33.4215 73.2706 73.4159 73.2706C95.8298 73.2706 114 68.9268 114 63.5686C114 58.2105 95.8298 53.8669 73.4159 53.8669C33.4215 53.8669 1 64.1908 1 76.9259C1 89.6609 33.4215 99.9851 73.4159 99.9851C95.8298 99.9851 114 95.6414 114 90.2831C114 84.9249 95.8298 80.582 73.4159 80.582C33.4215 80.582 1 90.8425 1 103.5C1 116.158 33.4215 126.418 73.4159 126.418C95.8298 126.418 114 122.075 114 116.717C114 111.359 95.8298 107.015 73.4159 107.015C33.4215 107.015 1 117.276 1 129.934C1 142.591 33.4215 152.852 73.4159 152.852C95.8298 152.852 114 148.508 114 143.151C114 137.792 95.8298 133.449 73.4159 133.449C33.4215 133.449 1 143.71 1 156.367C1 169.024 33.4215 179.285 73.4159 179.285C95.8298 179.285 114 174.942 114 169.583C114 164.226 95.8298 159.882 73.4159 159.882C33.4215 159.882 1 170.206 1 182.941C1 195.676 33.4215 206 73.4159 206M73.4159 160C33.4215 160 1 170.261 1 182.918C1 195.576 33.4215 205.837 73.4159 205.837C95.8298 205.837 114 201.493 114 196.135C114 190.777 95.8298 186.433 73.4159 186.433C33.4215 186.433 1 196.694 1 209.352C1 222.009 33.4215 232.271 73.4159 232.271C95.8298 232.271 114 227.927 114 222.569C114 217.211 95.8298 212.867 73.4159 212.867C33.4215 212.867 1 223.191 1 235.926C1 248.661 33.4215 258.985 73.4159 258.985C95.8298 258.985 114 254.641 114 249.283C114 243.925 95.8298 239.582 73.4159 239.582C33.4215 239.582 1 249.842 1 262.5C1 275.158 33.4215 285.418 73.4159 285.418C95.8298 285.418 114 281.075 114 275.717C114 270.359 95.8298 266.015 73.4159 266.015C33.4215 266.015 1 276.276 1 288.934C1 301.591 33.4215 311.852 73.4159 311.852C95.8298 311.852 114 307.508 114 302.151C114 296.792 95.8298 292.449 73.4159 292.449C33.4215 292.449 1 302.71 1 315.367C1 328.024 33.4215 338.285 73.4159 338.285C95.8298 338.285 114 333.942 114 328.583C114 323.226 95.8298 318.882 73.4159 318.882C33.4215 318.882 1 329.206 1 341.941C1 354.676 33.4215 365 73.4159 365"
+                stroke="#A1A6B4" stroke-linecap="round" />
+            </svg>
+            <svg class="burger-nav__right-svg" xmlns="http://www.w3.org/2000/svg" width="115" height="315"
+              viewBox="0 0 115 315" fill="none">
+              <path
+                d="M73.4159 1C33.4215 1 1 11.2609 1 23.9184C1 36.5758 33.4215 46.8368 73.4159 46.8368C95.8298 46.8368 114 42.4932 114 37.1351C114 31.777 95.8298 27.4335 73.4159 27.4335C33.4215 27.4335 1 37.6944 1 50.3518C1 63.0094 33.4215 73.2706 73.4159 73.2706C95.8298 73.2706 114 68.9268 114 63.5686C114 58.2105 95.8298 53.8669 73.4159 53.8669C33.4215 53.8669 1 64.1908 1 76.9259C1 89.6609 33.4215 99.9851 73.4159 99.9851C95.8298 99.9851 114 95.6414 114 90.2831C114 84.9249 95.8298 80.582 73.4159 80.582C33.4215 80.582 1 90.8425 1 103.5C1 116.158 33.4215 126.418 73.4159 126.418C95.8298 126.418 114 122.075 114 116.717C114 111.359 95.8298 107.015 73.4159 107.015C33.4215 107.015 1 117.276 1 129.934C1 142.591 33.4215 152.852 73.4159 152.852C95.8298 152.852 114 148.508 114 143.151C114 137.792 95.8298 133.449 73.4159 133.449C33.4215 133.449 1 143.71 1 156.367C1 169.024 33.4215 179.285 73.4159 179.285C95.8298 179.285 114 174.942 114 169.583C114 164.226 95.8298 159.882 73.4159 159.882C33.4215 159.882 1 170.206 1 182.941C1 195.676 33.4215 206 73.4159 206M73.4159 160C33.4215 160 1 170.261 1 182.918C1 195.576 33.4215 205.837 73.4159 205.837C95.8298 205.837 114 201.493 114 196.135C114 190.777 95.8298 186.433 73.4159 186.433C33.4215 186.433 1 196.694 1 209.352C1 222.009 33.4215 232.271 73.4159 232.271C95.8298 232.271 114 227.927 114 222.569C114 217.211 95.8298 212.867 73.4159 212.867C33.4215 212.867 1 223.191 1 235.926C1 248.661 33.4215 258.985 73.4159 258.985C95.8298 258.985 114 254.641 114 249.283C114 243.925 95.8298 239.582 73.4159 239.582C33.4215 239.582 1 249.842 1 262.5C1 275.158 33.4215 285.418 73.4159 285.418C95.8298 285.418 114 281.075 114 275.717C114 270.359 95.8298 266.015 73.4159 266.015C33.4215 266.015 1 276.276 1 288.934C1 301.591 33.4215 311.852 73.4159 311.852C95.8298 311.852 114 307.508 114 302.151C114 296.792 95.8298 292.449 73.4159 292.449C33.4215 292.449 1 302.71 1 315.367C1 328.024 33.4215 338.285 73.4159 338.285C95.8298 338.285 114 333.942 114 328.583C114 323.226 95.8298 318.882 73.4159 318.882C33.4215 318.882 1 329.206 1 341.941C1 354.676 33.4215 365 73.4159 365"
+                stroke="#A1A6B4" stroke-linecap="round" />
+            </svg>
+          </div>
         </div>
       </div>
     </div>
@@ -246,7 +248,7 @@
           </div>
           <div class="radio-right">
             <picture>
-              <source media="(max-width: 1024px)" srcset="img/micro1024.png">
+              <source media="(max-width: 1220px)" srcset="img/micro1024.png">
               <img src="img/hero-micro.png" alt="Микрофон">
             </picture>
           </div>
@@ -260,15 +262,13 @@
         </h2>
         <ul class="podcast-info">
           <li class="card list-reset">
-            <div class="card-left">
-              <picture>
-                <source media="(max-width: 596px)" srcset="img/europe596.png">
-                <img class="img-reset card__pictures" src="img/europe-19-main.png" alt="Картинка карточки">
-              </picture>
-              <span class="card__date">
-                14 июня
-              </span>
-            </div>
+            <picture>
+              <source media="(max-width: 596px)" srcset="img/europe596.png">
+              <img class="img-reset card__pictures" src="img/europe-19-main.png" alt="Картинка карточки">
+            </picture>
+            <span class="card__date">
+              14 июня
+            </span>
             <div class="card-right">
               <div class="card-descr">
                 <div class="card-info">
@@ -332,15 +332,13 @@
             </div>
           </li>
           <li class="card list-reset">
-            <div class="card-left">
-              <picture>
-                <source media="(max-width:596px)" srcset="img/about-music596.png">
-                <img class="img-reset card__pictures" src="img/about-music-main.png" alt="Картинка карточки">
-              </picture>
-              <span class="card__date">
-                11 июня
-              </span>
-            </div>
+            <picture>
+              <source media="(max-width:596px)" srcset="img/about-music596.png">
+              <img class="img-reset card__pictures" src="img/about-music-main.png" alt="Картинка карточки">
+            </picture>
+            <span class="card__date">
+              11 июня
+            </span>
             <div class="card-right">
               <div class="card-descr">
                 <div class="card-info">
@@ -404,15 +402,13 @@
             </div>
           </li>
           <li class="card list-reset">
-            <div class="card-left">
-              <picture>
-                <source media="(max-width:596px)" srcset="img/people596.png">
-                <img class="img-reset card__pictures" src="img/people-main.png" alt="Картинка карточки">
-              </picture>
-              <span class="card__date">
-                8 июня
-              </span>
-            </div>
+            <picture>
+              <source media="(max-width:596px)" srcset="img/people596.png">
+              <img class="img-reset card__pictures" src="img/people-main.png" alt="Картинка карточки">
+            </picture>
+            <span class="card__date">
+              8 июня
+            </span>
             <div class="card-right">
               <div class="card-descr">
                 <div class="card-info">
@@ -476,15 +472,13 @@
             </div>
           </li>
           <li class="card list-reset">
-            <div class="card-left">
-              <picture>
-                <source media="(max-width:596px)" srcset="img/hello596.png">
-                <img class="img-reset card__pictures" src="img/hallo-africa-main.png" alt="Картинка карточки">
-              </picture>
-              <span class="card__date">
-                5 июня
-              </span>
-            </div>
+            <picture>
+              <source media="(max-width:596px)" srcset="img/hello596.png">
+              <img class="img-reset card__pictures" src="img/hallo-africa-main.png" alt="Картинка карточки">
+            </picture>
+            <span class="card__date">
+              5 июня
+            </span>
             <div class="card-right">
               <div class="card-descr">
                 <div class="card-info">
@@ -548,15 +542,13 @@
             </div>
           </li>
           <li class="card card-mobile list-reset">
-            <div class="card-left">
-              <picture>
-                <source srcset="img/about-all-main.png">
-                <img class="img-reset card__pictures" src="img/about-all-main.png" alt="Картинка карточки">
-              </picture>
-              <span class="card__date">
-                2 июня
-              </span>
-            </div>
+            <picture>
+              <source srcset="img/about-all-main.png">
+              <img class="img-reset card__pictures" src="img/about-all-main.png" alt="Картинка карточки">
+            </picture>
+            <span class="card__date">
+              2 июня
+            </span>
             <div class="card-right">
               <div class="card-descr">
                 <div class="card-info">
@@ -620,15 +612,13 @@
             </div>
           </li>
           <li class="card card-mobile list-reset">
-            <div class="card-left">
-              <picture>
-                <source srcset="img/physic-main.png">
-                <img class="img-reset card__pictures" src="img/physic-main.png" alt="Картинка карточки">
-              </picture>
-              <span class="card__date">
-                28 мая
-              </span>
-            </div>
+            <picture>
+              <source srcset="img/physic-main.png">
+              <img class="img-reset card__pictures" src="img/physic-main.png" alt="Картинка карточки">
+            </picture>
+            <span class="card__date">
+              28 мая
+            </span>
             <div class="card-right">
               <div class="card-descr">
                 <div class="card-info">
@@ -692,15 +682,13 @@
             </div>
           </li>
           <li class="card card-mobile list-reset">
-            <div class="card-left">
-              <picture>
-                <source srcset="img/sound-main.png">
-                <img class="img-reset card__pictures" src="img/sound-main.png" alt="Картинка карточки">
-              </picture>
-              <span class="card__date">
-                22 мая
-              </span>
-            </div>
+            <picture>
+              <source srcset="img/sound-main.png">
+              <img class="img-reset card__pictures" src="img/sound-main.png" alt="Картинка карточки">
+            </picture>
+            <span class="card__date">
+              22 мая
+            </span>
             <div class="card-right">
               <div class="card-descr">
                 <div class="card-info">
@@ -765,15 +753,13 @@
             </div>
           </li>
           <li class="card card-mobile list-reset">
-            <div class="card-left">
-              <picture>
-                <source srcset="img/rule-main.png">
-                <img class="img-reset card__pictures" src="img/rule-main.png" alt="Картинка карточки">
-              </picture>
-              <span class="card__date">
-                18 мая
-              </span>
-            </div>
+            <picture>
+              <source srcset="img/rule-main.png">
+              <img class="img-reset card__pictures" src="img/rule-main.png" alt="Картинка карточки">
+            </picture>
+            <span class="card__date">
+              18 мая
+            </span>
             <div class="card-right">
               <div class="card-descr">
                 <div class="card-info">
@@ -843,7 +829,7 @@
         </button>
       </div>
     </section>
-    <section class="broadcasts">
+   <section class="broadcasts">
       <div class="container broadcasts__container">
         <div class="broadcasts__wrap">
           <div class="broadcasts__menu">
@@ -1026,7 +1012,7 @@
 
       </div>
     </section>
-    <section class="guests">
+   <section class="guests">
       <div class="container">
         <h2 class="guests__title title" id="guests">
           Гости
@@ -1216,7 +1202,10 @@
           </div>
           <div data-target="notarget" class="profile">
             <picture>
-              <img src="img/notarget.png" alt="Пока никого не выбрали">
+              <source media="(max-width:650px)" srcset="img/notarget320.png">
+              <source media="(max-width:992px)" srcset="img/notarget768.png">
+              <source media="(max-width:1024px)" srcset="img/notarget1024.png">
+              <img class="profile__notarget" src="img/notarget.png" alt="Пока никого не выбрали">
             </picture>
           </div>
         </div>
@@ -1234,46 +1223,46 @@
             </span>
             <div class="checkbox">
               <div class="checkbox__categories">
-                  <label class="checkbox__label" for="postpank">
-                    <input type="radio" name="check" id="postpank" class="postpank" checked>
-                    Постпанк
-                    <span></span>
-                  </label>
-                  <label class="checkbox__label" for="hardcore">
-                    <input type="radio" name="check" id="hardcore" class="hardcore">
-                    Хардкор
-                    <span></span>
-                  </label>
-                  <label class="checkbox__label" for="pankrok">
-                    <input type="radio" name="check" id="pankrok" class="pankrok">
-                    Панк-рок
-                    <span></span>
-                  </label>
-                  <label class="checkbox__label" for="rok">
-                    <input type="radio" name="check" id="rok" class="rok">
-                    Рок
-                    <span></span>
-                  </label>
-                  <label class="checkbox__label" for="progressive">
-                    <input type="radio" name="check" id="progressive" class="progressive">
-                    Прогрессивный рок
-                    <span></span>
-                  </label>
-                  <label class="checkbox__label" for="electronic">
-                    <input type="radio" name="check" id="electronic" class="electronic">
-                    Электронная музыка
-                    <span></span>
-                  </label>
-                  <label class="checkbox__label" for="classic">
-                    <input type="radio" name="check" id="classic" class="classic">
-                    Классическая музыка
-                    <span></span>
-                  </label>
-                  <label class="checkbox__label" for="silence">
-                    <input type="radio" name="check" id="silence" class="silence">
-                    Звуки природы и&nbsp;шум города
-                    <span></span>
-                  </label>
+                <label class="checkbox__label" for="postpank">
+                  <input type="radio" name="check" id="postpank" class="postpank" checked>
+                  Постпанк
+                  <span></span>
+                </label>
+                <label class="checkbox__label" for="hardcore">
+                  <input type="radio" name="check" id="hardcore" class="hardcore">
+                  Хардкор
+                  <span></span>
+                </label>
+                <label class="checkbox__label" for="pankrok">
+                  <input type="radio" name="check" id="pankrok" class="pankrok">
+                  Панк-рок
+                  <span></span>
+                </label>
+                <label class="checkbox__label" for="rok">
+                  <input type="radio" name="check" id="rok" class="rok">
+                  Рок
+                  <span></span>
+                </label>
+                <label class="checkbox__label" for="progressive">
+                  <input type="radio" name="check" id="progressive" class="progressive">
+                  Прогрессивный рок
+                  <span></span>
+                </label>
+                <label class="checkbox__label" for="electronic">
+                  <input type="radio" name="check" id="electronic" class="electronic">
+                  Электронная музыка
+                  <span></span>
+                </label>
+                <label class="checkbox__label" for="classic">
+                  <input type="radio" name="check" id="classic" class="classic">
+                  Классическая музыка
+                  <span></span>
+                </label>
+                <label class="checkbox__label" for="silence">
+                  <input type="radio" name="check" id="silence" class="silence">
+                  Звуки природы и&nbsp;шум города
+                  <span></span>
+                </label>
               </div>
             </div>
           </div>
@@ -1768,7 +1757,7 @@
         </div>
       </div>
     </section>
-    <section class="about">
+ <section class="about">
       <div class="container">
         <div class="about-descr">
           <h2 class="about-descr__title title" id="aboutus">
@@ -1799,9 +1788,9 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide swiper-slide--1">
                 <picture>
-                  <source media="(max-width: 592px)" srcset="img/guter320.png">
+                  <source media="(max-width: 720px)" srcset="img/guter320.png">
                   <source media="(max-width: 992px)" srcset="img/guternberg768.png">
-                  <source media="(max-width: 1024px)" srcset="img/guter1024.png">
+                  <source media="(max-width: 1220px)" srcset="img/guter1024.png">
                   <img class="swiper-slide__speaker" src="img/guternberg.png" alt="Изображение спикера">
                 </picture>
                 <div class="swiper__title">
@@ -1813,9 +1802,9 @@
               </div>
               <div class="swiper-slide swiper-slide--2">
                 <picture>
-                  <source media="(max-width: 592px)" srcset="img/vasil320.png">
+                  <source media="(max-width: 720px)" srcset="img/vasil320.png">
                   <source media="(max-width: 992px)" srcset="img/vasileva768.png">
-                  <source media="(max-width: 1024px)" srcset="img/vasil1024.png">
+                  <source media="(max-width: 1220px)" srcset="img/vasil1024.png">
                   <img class="swiper-slide__speaker" src="img/vasileva.png" alt="Изображение спикера">
                 </picture>
                 <div class="swiper__title">
@@ -1827,9 +1816,9 @@
               </div>
               <div class="swiper-slide swiper-slide--3">
                 <picture>
-                  <source media="(max-width: 592px)" srcset="img/dmitri320.png">
+                  <source media="(max-width: 720px)" srcset="img/dmitri320.png">
                   <source media="(max-width: 992px)" srcset="img/dmitriev768.png">
-                  <source media="(max-width: 1024px)" srcset="img/dmitri1024.png">
+                  <source media="(max-width: 1220px)" srcset="img/dmitri1024.png">
                   <img class="swiper-slide__speaker" src="img/dmitrievskiy.png" alt="Изображение спикера">
                 </picture>
                 <div class="swiper__title">
@@ -1841,9 +1830,9 @@
               </div>
               <div class="swiper-slide swiper-slide--4">
                 <picture>
-                  <source media="(max-width: 592px)" srcset="img/fleg320.png">
+                  <source media="(max-width: 720px)" srcset="img/fleg320.png">
                   <source media="(max-width: 992px)" srcset="img/fleganova768.png">
-                  <source media="(max-width: 1024px)" srcset="img/flega1024.png">
+                  <source media="(max-width: 1220px)" srcset="img/flega1024.png">
                   <img class="swiper-slide__speaker" src="img/fleganova.png" alt="Изображение спикера">
                 </picture>
                 <div class="swiper__title">
@@ -1855,9 +1844,9 @@
               </div>
               <div class="swiper-slide swiper-slide--5">
                 <picture>
-                  <source media="(max-width: 592px)" srcset="img/prokop320.png">
+                  <source media="(max-width: 720px)" srcset="img/prokop320.png">
                   <source media="(max-width: 992px)" srcset="img/prokopiev768.png">
-                  <source media="(max-width: 1024px)" srcset="img/prokop1024.png">
+                  <source media="(max-width: 1220px)" srcset="img/prokop1024.png">
                   <img class="swiper-slide__speaker" src="img/prokopiev.png" alt="Изображение спикера">
                 </picture>
                 <div class="swiper__title">
@@ -1869,9 +1858,9 @@
               </div>
               <div class="swiper-slide swiper-slide--6">
                 <picture>
-                  <source media="(max-width: 592px)" srcset="img/kortn320.png">
+                  <source media="(max-width: 720px)" srcset="img/kortn320.png">
                   <source media="(max-width: 992px)" srcset="img/kortneva768.png">
-                  <source media="(max-width: 1024px)" srcset="img/kortn1024.png">
+                  <source media="(max-width: 1220px)" srcset="img/kortn1024.png">
                   <img class="swiper-slide__speaker" src="img/kortneva.png" alt="Изображение спикера">
                 </picture>
                 <div class="swiper__title">
@@ -2120,4 +2109,5 @@
   <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
   <script src="js/index.js"></script>
 </body>
+
 </html>
