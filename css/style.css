@@ -623,6 +623,22 @@ body {
   justify-content: space-between;
 }
 
+.header-down__svg {
+  transition: transform 0.3s ease-in-out;
+}
+
+.header-bottom__svg-active {
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  -ms-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+}
 
 .burger-nav {
   display: none;
