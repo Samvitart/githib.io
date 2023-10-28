@@ -2,6 +2,10 @@ document.querySelector('.button__search').addEventListener('click', function () 
   document.querySelector('.button__input').classList.toggle('search-active')
 });
 
+document.querySelector('.ac-trigger').addEventListener('click', () => {
+    document.querySelector('.ac-trigger__svg').classList.toggle('is-active__svg')
+  });
+
 /*бургер-меню*/
 document.querySelector('#burger').addEventListener('click', function () {
   document.querySelector('.burger-active').classList.toggle('burger-active__open')
@@ -87,7 +91,7 @@ document.querySelectorAll('.ac-panel__name').forEach(function (guestsBtn) {
 
 //свайпер
 const swiper = new Swiper('.swiper', {
-  slidesPerView: 2,
+  slidesPerView: 4,
   slidesPerGroup: 1,
   navigation: {
     nextEl: '.swiper-button-next',
