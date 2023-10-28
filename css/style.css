@@ -1598,11 +1598,11 @@ body {
 }
 
 .item__card .item__link svg {
-  transition: color 0.3s ease-in-out, fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
-  -webkit-transition: color 0.3s ease-in-out, fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
-  -moz-transition: color 0.3s ease-in-out, fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
-  -ms-transition: color 0.3s ease-in-out, fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out, fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, fill 0.3s ease-in-out, stroke 0.3s ease-in-out, transform 0.2s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out, fill 0.3s ease-in-out, stroke 0.3s ease-in-out, transform 0.2s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out, fill 0.3s ease-in-out, stroke 0.3s ease-in-out, transform 0.2s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out, fill 0.3s ease-in-out, stroke 0.3s ease-in-out, transform 0.2s ease-in-out;
+  -o-transition: color 0.3s ease-in-out, fill 0.3s ease-in-out, stroke 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .item__card:focus .item__link svg {
@@ -1626,7 +1626,7 @@ body {
   -moz-transition: transform 0.2s ease-in-out, fill 0.2s ease-in-out;
   -ms-transition: transform 0.2s ease-in-out, fill 0.2s ease-in-out;
   -o-transition: transform 0.2s ease-in-out, fill 0.2s ease-in-out;
-  transform-origin: 0 0;
+  transform-origin: 0 1;
 }
 
 .item__card:active .item__link svg {
