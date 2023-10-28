@@ -1806,23 +1806,61 @@
   }
 
   .rok:checked+span::before {
+    top: -3px;
+    left: -1px;
+    height: 36px;
     width: 72px;
   }
 
   .progressive:checked+span::before {
     width: 193px;
+    top: -3px;
+    left: -1px;
+    height: 36px;
   }
 
   .electronic:checked+span::before {
     width: 195px;
+    top: -3px;
+    left: -1px;
+    height: 36px;
   }
 
   .classic:checked+span::before {
     width: 200px;
+    top: -3px;
+    left: -1px;
+    height: 36px;
   }
 
   .silence:checked+span::before {
     width: 265px;
+    top: -3px;
+    left: -1px;
+    height: 36px;
+  }
+
+  .rok:checked+span::before,
+  .progressive:checked+span::before,
+  .electronic:checked+span::before,
+  .classic:checked+span::before,
+  .silence:checked+span::before {
+    transition: border 0.25s ease-in-out;
+    -webkit-transition: border 0.25s ease-in-out;
+    -moz-transition: border 0.25s ease-in-out;
+    -ms-transition: border 0.25s ease-in-out;
+    -o-transition: border 0.25s ease-in-out;
+  }
+
+  .postpank+span::before,
+  .hardcore+span::before,
+  .pankrok+span::before,
+  .rok+span::before,
+  .progressive+span::before,
+  .electronic+span::before,
+  .classic+span::before,
+  .silence+span::before {
+    border: none;
   }
 
   .postpank+span::before,
@@ -1855,6 +1893,10 @@
     transition: border 0.25s ease-in-out;
     -webkit-transition: border 0.25s ease-in-out;
     -moz-transition: border 0.25s ease-in-out;
+    top: -3px;
+    left: -1px;
+    width: 113px;
+    height: 36px;
     -ms-transition: border 0.25s ease-in-out;
     -o-transition: border 0.25s ease-in-out;
   }
